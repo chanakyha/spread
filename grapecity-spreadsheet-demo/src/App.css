@@ -1,0 +1,181 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  color: #111827;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: #f6f7f9;
+}
+
+.page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 40px 24px 64px;
+}
+
+.page-head {
+  margin-bottom: 20px;
+}
+
+.page-head h1.ant-typography {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.page-head .ant-typography {
+  margin-bottom: 0;
+}
+
+.page-loading {
+  padding: 120px 0;
+}
+
+/* Sheet card ------------------------------------------------------------- */
+.sheet-card {
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 8px 24px rgba(16, 24, 40, 0.06);
+}
+
+.toolbar {
+  padding: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.sheet-grid {
+  height: 520px;
+  position: relative;
+}
+
+/* Sheet tabs + formula bar ------------------------------------------------ */
+.sheet-tabs {
+  padding: 0 12px;
+  border-top: 1px solid #f0f0f0;
+  background: #fafafa;
+}
+
+.sheet-tabs .ant-tabs-nav {
+  margin: 0 !important;
+}
+
+.sheet-tabs .ant-tabs-nav::before {
+  display: none;
+}
+
+.sheet-hint {
+  font-size: 12px;
+}
+
+.name-box {
+  min-width: 56px;
+  margin: 0;
+  text-align: center;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-weight: 600;
+}
+
+.formula-input {
+  flex: 1;
+}
+
+.formula-input input {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* Tree column -------------------------------------------------------------- */
+.tree-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.tree-label--leaf {
+  padding-left: 30px;
+}
+
+.tree-guide {
+  width: 10px;
+  height: 1px;
+  background: #d1d5db;
+  margin-left: -16px;
+}
+
+.tree-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tree-toggle .anticon {
+  transition: transform 0.15s ease;
+  font-size: 11px;
+}
+
+.tree-toggle.is-open .anticon {
+  transform: rotate(90deg);
+}
+
+.tree-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.tree-count {
+  height: 18px;
+  line-height: 18px;
+  min-width: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: #e5e7eb;
+  color: #4b5563;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Cell controls -------------------------------------------------------------- */
+.cell-control {
+  display: inline-flex;
+  align-items: center;
+}
+
+.status-select {
+  min-width: 140px;
+}
+
+.status-select .ant-select-selector {
+  padding-left: 0 !important;
+}
+
+.status-tag {
+  margin: 0;
+}
+
+/* Chart card ------------------------------------------------------------- */
+.chart-card {
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 8px 24px rgba(16, 24, 40, 0.06);
+}
+
+.kpis {
+  margin-bottom: 16px;
+}
+
+.chart-box {
+  height: 380px;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 20px 12px 48px;
+  }
+}
